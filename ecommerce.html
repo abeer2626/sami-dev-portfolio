@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Solutions | SAMI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#1e3a8a',
+                        dark: '#1f2937',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">&lt;/&gt;</span>
+                    </div>
+                    <a href="index.html" class="text-2xl font-bold text-primary">SAMI<span class="text-gray-400">.dev</span></a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-primary transition">Portfolio</a>
+                    <a href="ecommerce.html" class="text-primary font-medium hover:text-secondary transition">E-commerce</a>
+                    <a href="projects.html" class="text-gray-700 hover:text-primary transition">Projects</a>
+                    <a href="about.html" class="text-gray-700 hover:text-primary transition">About</a>
+                    <a href="brand.html" class="text-gray-700 hover:text-primary transition">Brand</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-700 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100">Portfolio</a>
+                <a href="ecommerce.html" class="block px-3 py-2 text-primary font-medium">E-commerce</a>
+                <a href="projects.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100">Projects</a>
+                <a href="about.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100">About</a>
+                <a href="brand.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100">Brand</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-blue-900 to-blue-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center text-white">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">E-commerce Solutions</h1>
+                <p class="text-xl text-blue-100 max-w-3xl mx-auto">Transform your business with powerful, custom-built e-commerce platforms designed to increase sales and streamline operations.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-dark mb-4">Our Services</h2>
+            <p class="text-center text-gray-600 mb-16 max-w-2xl mx-auto">Comprehensive e-commerce solutions tailored to your business needs</p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Custom Design -->
+                <div class="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition border border-blue-100">
+                    <div class="bg-primary text-white w-16 h-16 rounded-xl flex items-center justify-center text-3xl mb-6">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-dark mb-4">Custom Design</h3>
+                    <p class="text-gray-600 mb-4">Unique, brand-aligned designs that capture your business identity and engage customers.</p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check-circle text-primary mr-2"></i>Responsive layouts</li>
+                        <li><i class="fas fa-check-circle text-primary mr-2"></i>Brand integration</li>
+                        <li><i class="fas fa-check-circle text-primary mr-2"></i>UX-optimized designs</li>
+                    </ul>
+                </div>
+
+                <!-- Payment Gateway -->
+                <div class="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition border border-blue-100">
+                    <div class="bg-primary text-white w-16 h-16 rounded-xl flex items-center justify-center text-3xl mb-6">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-dark mb-4">Payment Gateway</h3>
+                    <p class="text-gray-600 mb-4">Secure and seamless payment integration with multiple payment providers.</p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check-circle text-primary mr-2"></i>Stripe & PayPal</li>
+                        <li><i class="fas fa-check-circle text-primary mr-2"></i>Multiple currencies</li>
+                        <li><i class="fas fa-check-circle text-primary mr-2"></i>SSL secured</li>
+                    </ul>
+                </div>
+
+                <!-- Admin Panel -->
+                <div class="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition border border-blue-100">
+                    <div class="bg-primary text-white w-16 h-16 rounded-xl flex items-center justify-center text-3xl mb-6">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-dark mb-4">Admin Panel</h3>
+                    <p class="text-gray-600 mb-4">Powerful dashboard to manage your store, orders, and customers effortlessly.</p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check-circle text-primary mr-2"></i>Order management</li>
+                        <li><i class="fas fa-check-circle text-primary mr-2"></i>Customer insights</li>
+                        <li><i class="fas fa-check-circle text-primary mr-2"></i>Sales analytics</li>
+                    </ul>
+                </div>
+
+                <!-- Inventory Management -->
+                <div class="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition border border-blue-100">
+                    <div class="bg-primary text-white w-16 h-16 rounded-xl flex items-center justify-center text-3xl mb-6">
+                        <i class="fas fa-boxes"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-dark mb-4">Inventory Management</h3>
+                    <p class="text-gray-600 mb-4">Smart inventory tracking with low-stock alerts and automated updates.</p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check-circle text-primary mr-2"></i>Stock tracking</li>
+                        <li><i class="fas fa-check-circle text-primary mr-2"></i>Low stock alerts</li>
+                        <li><i class="fas fa-check-circle text-primary mr-2"></i>Product variants</li>
+                    </ul>
+                </div>
+
+                <!-- User Authentication -->
+                <div class="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition border border-blue-100">
+                    <div class="bg-primary text-white w-16 h-16 rounded-xl flex items-center justify-center text-3xl mb-6">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-dark mb-4">User Authentication</h3>
+                    <p class="text-gray-600 mb-4">Secure user registration and login systems with role-based access.</p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check-circle text-primary mr-2"></i>Social login</li>
+                        <li><i class="fas fa-check-circle text-primary mr-2"></i>Password recovery</li>
+                        <li><i class="fas fa-check-circle text-primary mr-2"></i>Secure sessions</li>
+                    </ul>
+                </div>
+
+                <!-- SEO & Performance -->
+                <div class="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition border border-blue-100">
+                    <div class="bg-primary text-white w-16 h-16 rounded-xl flex items-center justify-center text-3xl mb-6">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-dark mb-4">SEO & Performance</h3>
+                    <p class="text-gray-600 mb-4">Optimized for search engines and lightning-fast loading speeds.</p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check-circle text-primary mr-2"></i>Meta optimization</li>
+                        <li><i class="fas fa-check-circle text-primary mr-2"></i>Fast loading</li>
+                        <li><i class="fas fa-check-circle text-primary mr-2"></i>Mobile optimized</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-dark mb-16">How It Works</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">1</div>
+                    <h3 class="text-xl font-bold text-dark mb-2">Consultation</h3>
+                    <p class="text-gray-600">Discuss your requirements and business goals</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">2</div>
+                    <h3 class="text-xl font-bold text-dark mb-2">Design</h3>
+                    <p class="text-gray-600">Create custom design aligned with your brand</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">3</div>
+                    <h3 class="text-xl font-bold text-dark mb-2">Development</h3>
+                    <p class="text-gray-600">Build and integrate all features</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">4</div>
+                    <h3 class="text-xl font-bold text-dark mb-2">Launch</h3>
+                    <p class="text-gray-600">Deploy and provide ongoing support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-dark mb-4">Pricing Plans</h2>
+            <p class="text-center text-gray-600 mb-16 max-w-2xl mx-auto">Choose the perfect package for your business</p>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Starter -->
+                <div class="bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-primary transition">
+                    <h3 class="text-2xl font-bold text-dark mb-2">Starter</h3>
+                    <p class="text-gray-600 mb-6">Perfect for small businesses</p>
+                    <div class="text-4xl font-bold text-primary mb-6">$299</div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-primary mr-3"></i>Custom design</li>
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-primary mr-3"></i>Payment integration</li>
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-primary mr-3"></i>Basic admin panel</li>
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-primary mr-3"></i>Up to 50 products</li>
+                    </ul>
+                    <a href="mailto:samijee24@gmail.com?subject=Starter Plan" class="block text-center bg-primary text-white py-3 rounded-xl font-semibold hover:bg-secondary transition">Get Started</a>
+                </div>
+
+                <!-- Professional -->
+                <div class="bg-gradient-to-br from-blue-900 to-blue-700 rounded-2xl p-8 transform md:scale-105 shadow-xl">
+                    <div class="text-white text-sm font-semibold mb-2">MOST POPULAR</div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Professional</h3>
+                    <p class="text-blue-100 mb-6">For growing businesses</p>
+                    <div class="text-4xl font-bold text-white mb-6">$599</div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-white"><i class="fas fa-check text-blue-300 mr-3"></i>Everything in Starter</li>
+                        <li class="flex items-center text-white"><i class="fas fa-check text-blue-300 mr-3"></i>Advanced admin</li>
+                        <li class="flex items-center text-white"><i class="fas fa-check text-blue-300 mr-3"></i>Inventory management</li>
+                        <li class="flex items-center text-white"><i class="fas fa-check text-blue-300 mr-3"></i>Up to 500 products</li>
+                        <li class="flex items-center text-white"><i class="fas fa-check text-blue-300 mr-3"></i>SEO optimization</li>
+                    </ul>
+                    <a href="mailto:samijee24@gmail.com?subject=Professional Plan" class="block text-center bg-white text-primary py-3 rounded-xl font-semibold hover:bg-gray-100 transition">Get Started</a>
+                </div>
+
+                <!-- Enterprise -->
+                <div class="bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-primary transition">
+                    <h3 class="text-2xl font-bold text-dark mb-2">Enterprise</h3>
+                    <p class="text-gray-600 mb-6">For large-scale operations</p>
+                    <div class="text-4xl font-bold text-primary mb-6">$999+</div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-primary mr-3"></i>Everything in Pro</li>
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-primary mr-3"></i>Custom features</li>
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-primary mr-3"></i>Priority support</li>
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-primary mr-3"></i>Unlimited products</li>
+                    </ul>
+                    <a href="mailto:samijee24@gmail.com?subject=Enterprise Plan" class="block text-center bg-primary text-white py-3 rounded-xl font-semibold hover:bg-secondary transition">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-br from-blue-900 to-blue-700">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Launch Your Store?</h2>
+            <p class="text-xl text-blue-100 mb-8">Let's build an e-commerce platform that drives sales and grows your business.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="projects.html" class="bg-white text-primary px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition">View My Work</a>
+                <a href="mailto:samijee24@gmail.com?subject=E-commerce Project" class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-primary transition">Start Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">SAMI</h3>
+                    <p class="text-gray-400">Professional Web Developer & E-commerce Specialist dedicated to delivering exceptional digital experiences.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-primary transition">Portfolio</a></li>
+                        <li><a href="ecommerce.html" class="text-gray-400 hover:text-primary transition">E-commerce Solutions</a></li>
+                        <li><a href="projects.html" class="text-gray-400 hover:text-primary transition">Projects</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-primary transition">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect With Me</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-primary transition text-2xl"><i class="fab fa-github"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition text-2xl"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition text-2xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition text-2xl"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <p class="text-gray-400 mt-4"><i class="fas fa-envelope mr-2"></i>samijee24@gmail.com</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 SAMI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>

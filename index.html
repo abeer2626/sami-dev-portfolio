@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sami - Professional Portfolio | Web Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#1e3a8a',
+                        dark: '#1f2937',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">&lt;/&gt;</span>
+                    </div>
+                    <a href="index.html" class="text-2xl font-bold text-primary">Sami<span class="text-gray-400">.dev</span></a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-primary font-medium hover:text-secondary transition">Portfolio</a>
+                    <a href="ecommerce.html" class="text-gray-700 hover:text-primary transition">E-commerce</a>
+                    <a href="projects.html" class="text-gray-700 hover:text-primary transition">Projects</a>
+                    <a href="about.html" class="text-gray-700 hover:text-primary transition">About</a>
+                    <a href="brand.html" class="text-gray-700 hover:text-primary transition">Brand</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-700 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-primary font-medium">Portfolio</a>
+                <a href="ecommerce.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100">E-commerce</a>
+                <a href="projects.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100">Projects</a>
+                <a href="about.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100">About</a>
+                <a href="brand.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100">Brand</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-gray-900 to-blue-900 min-h-screen flex items-center relative overflow-hidden">
+        <!-- Code Pattern Background -->
+        <div class="absolute inset-0 opacity-10">
+            <pre class="text-green-400 text-xs p-4 leading-tight">
+function create() {
+  const developer = "Sami";
+  const skills = ["Frontend", "Backend", "DevOps"];
+  return {
+    passion: "Building amazing things",
+    quality: "Excellence in code"
+  };
+}
+// Building the future, one line at a time
+            </pre>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-white">
+                    <!-- Dev Logo -->
+                    <div class="flex items-center gap-3 mb-8">
+                        <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center shadow-lg">
+                            <span class="text-white font-bold text-3xl">&lt;/&gt;</span>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold">SAMI.dev</h2>
+                            <p class="text-blue-300 text-sm">Software Engineer</p>
+                        </div>
+                    </div>
+
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">Full Stack<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Developer</span></h1>
+                    <p class="text-xl md:text-2xl mb-6 text-blue-200">Software Engineer | Problem Solver | Digital Architect</p>
+                    <p class="text-lg mb-10 max-w-xl text-gray-300">Building scalable web applications, e-commerce platforms, and innovative digital solutions. Clean code, modern architecture, and exceptional user experiences.</p>
+
+                    <!-- Tech Stack Pills -->
+                    <div class="flex flex-wrap gap-3 mb-8">
+                        <span class="bg-gray-800 border border-gray-700 text-green-400 px-4 py-2 rounded-lg text-sm font-mono">JavaScript</span>
+                        <span class="bg-gray-800 border border-gray-700 text-blue-400 px-4 py-2 rounded-lg text-sm font-mono">React</span>
+                        <span class="bg-gray-800 border border-gray-700 text-green-500 px-4 py-2 rounded-lg text-sm font-mono">Node.js</span>
+                        <span class="bg-gray-800 border border-gray-700 text-purple-400 px-4 py-2 rounded-lg text-sm font-mono">Python</span>
+                        <span class="bg-gray-800 border border-gray-700 text-orange-400 px-4 py-2 rounded-lg text-sm font-mono">AWS</span>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="projects.html" class="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-3 rounded-xl font-semibold hover:from-blue-700 hover:to-blue-800 transition shadow-lg flex items-center gap-2">
+                            <i class="fas fa-code"></i> View Projects
+                        </a>
+                        <a href="ecommerce.html" class="border-2 border-blue-400 text-blue-400 px-8 py-3 rounded-xl font-semibold hover:bg-blue-400 hover:text-white transition flex items-center gap-2">
+                            <i class="fas fa-server"></i> My Services
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Terminal Style Card -->
+                <div class="hidden md:block">
+                    <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden border border-gray-700">
+                        <div class="bg-gray-800 px-4 py-3 flex items-center gap-2">
+                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                            <span class="ml-4 text-gray-400 text-sm">sami@dev:~</span>
+                        </div>
+                        <div class="p-6 font-mono text-sm leading-relaxed">
+                            <p class="text-green-400">$ whoami</p>
+                            <p class="text-white mb-4">Sami - Full Stack Developer</p>
+                            <p class="text-green-400">$ cat skills.json</p>
+                            <p class="text-blue-300 mb-4">{</p>
+                            <p class="text-white ml-4">"frontend": ["React", "Vue", "Tailwind"],</p>
+                            <p class="text-white ml-4">"backend": ["Node.js", "Python", "PHP"],</p>
+                            <p class="text-white ml-4">"database": ["PostgreSQL", "MongoDB"],</p>
+                            <p class="text-white ml-4">"devops": ["Docker", "AWS", "CI/CD"]</p>
+                            <p class="text-blue-300">}</p>
+                            <p class="text-green-400 mt-4">$ _<span class="animate-pulse">▊</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-dark mb-16">Skills & Expertise</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Frontend Skills -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="text-primary text-4xl mb-4"><i class="fas fa-laptop-code"></i></div>
+                    <h3 class="text-xl font-bold text-dark mb-4">Frontend Development</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-primary mr-2"></i>HTML5 & CSS3</li>
+                        <li><i class="fas fa-check text-primary mr-2"></i>Tailwind CSS</li>
+                        <li><i class="fas fa-check text-primary mr-2"></i>JavaScript (ES6+)</li>
+                        <li><i class="fas fa-check text-primary mr-2"></i>Responsive Design</li>
+                    </ul>
+                </div>
+                <!-- Backend Skills -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="text-primary text-4xl mb-4"><i class="fas fa-server"></i></div>
+                    <h3 class="text-xl font-bold text-dark mb-4">Backend Development</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-primary mr-2"></i>Node.js & Express</li>
+                        <li><i class="fas fa-check text-primary mr-2"></i>PHP Development</li>
+                        <li><i class="fas fa-check text-primary mr-2"></i>API Integration</li>
+                        <li><i class="fas fa-check text-primary mr-2"></i>Database Management</li>
+                    </ul>
+                </div>
+                <!-- E-commerce Skills -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="text-primary text-4xl mb-4"><i class="fas fa-shopping-cart"></i></div>
+                    <h3 class="text-xl font-bold text-dark mb-4">E-commerce Solutions</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-primary mr-2"></i>Payment Gateways</li>
+                        <li><i class="fas fa-check text-primary mr-2"></i>Inventory Systems</li>
+                        <li><i class="fas fa-check text-primary mr-2"></i>Admin Panels</li>
+                        <li><i class="fas fa-check text-primary mr-2"></i>Custom Store Design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-dark mb-16">Experience Highlights</h2>
+            <div class="space-y-8">
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-start gap-4">
+                        <div class="text-primary text-3xl"><i class="fas fa-briefcase"></i></div>
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">Freelance Web Developer</h3>
+                            <p class="text-primary font-medium">Present</p>
+                            <p class="text-gray-600 mt-2">Delivering custom e-commerce solutions and web applications for clients worldwide. Specializing in user-friendly designs and robust functionality.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-start gap-4">
+                        <div class="text-primary text-3xl"><i class="fas fa-code"></i></div>
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">Full Stack Developer</h3>
+                            <p class="text-gray-500 font-medium">Multiple Projects</p>
+                            <p class="text-gray-600 mt-2">Developed numerous websites ranging from landing pages to complex e-commerce platforms with admin dashboards.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-dark mb-16">What Clients Say</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                    <div class="flex text-primary mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Sami delivered an outstanding e-commerce website that exceeded our expectations. Professional, timely, and incredibly skilled!"</p>
+                    <p class="font-bold text-dark">- Ahmed K.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                    <div class="flex text-primary mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Great communication throughout the project. The website is fast, responsive, and exactly what we needed for our business."</p>
+                    <p class="font-bold text-dark">- Sarah M.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                    <div class="flex text-primary mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Highly recommend Sami for any web development project. The attention to detail and quality of work is exceptional."</p>
+                    <p class="font-bold text-dark">- Fatima R.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="py-20 bg-gradient-to-br from-blue-900 to-blue-700">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Let's Work Together</h2>
+            <p class="text-xl text-blue-100 mb-8">Have a project in mind? I'd love to hear about it. Let's create something amazing together!</p>
+            <a href="mailto:samijee24@gmail.com" class="inline-block bg-white text-primary px-10 py-4 rounded-full font-semibold hover:bg-gray-100 transition text-lg">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Sami</h3>
+                    <p class="text-gray-400">Professional Web Developer & E-commerce Specialist dedicated to delivering exceptional digital experiences.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-primary transition">Portfolio</a></li>
+                        <li><a href="ecommerce.html" class="text-gray-400 hover:text-primary transition">E-commerce Solutions</a></li>
+                        <li><a href="projects.html" class="text-gray-400 hover:text-primary transition">Projects</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-primary transition">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect With Me</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-primary transition text-2xl"><i class="fab fa-github"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition text-2xl"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition text-2xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition text-2xl"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <p class="text-gray-400 mt-4"><i class="fas fa-envelope mr-2"></i>samijee24@gmail.com</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 Sami. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>

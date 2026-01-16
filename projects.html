@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Showcase | SAMI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#1e3a8a',
+                        dark: '#1f2937',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">&lt;/&gt;</span>
+                    </div>
+                    <a href="index.html" class="text-2xl font-bold text-primary">SAMI<span class="text-gray-400">.dev</span></a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-primary transition">Portfolio</a>
+                    <a href="ecommerce.html" class="text-gray-700 hover:text-primary transition">E-commerce</a>
+                    <a href="projects.html" class="text-primary font-medium hover:text-secondary transition">Projects</a>
+                    <a href="about.html" class="text-gray-700 hover:text-primary transition">About</a>
+                    <a href="brand.html" class="text-gray-700 hover:text-primary transition">Brand</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-700 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100">Portfolio</a>
+                <a href="ecommerce.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100">E-commerce</a>
+                <a href="projects.html" class="block px-3 py-2 text-primary font-medium">Projects</a>
+                <a href="about.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100">About</a>
+                <a href="brand.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100">Brand</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-blue-900 to-blue-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center text-white">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Projects Showcase</h1>
+                <p class="text-xl text-blue-100 max-w-3xl mx-auto">A collection of websites and digital solutions I've built. Each project reflects my commitment to quality and innovation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Project 1 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition group">
+                    <div class="h-48 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
+                        <i class="fas fa-shopping-bag text-white text-6xl group-hover:scale-110 transition"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">Fashion Store E-commerce</h3>
+                        <p class="text-gray-600 mb-4">A complete online fashion store with product filtering, shopping cart, and secure payment integration.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-primary px-3 py-1 rounded-full text-sm">HTML</span>
+                            <span class="bg-blue-100 text-primary px-3 py-1 rounded-full text-sm">CSS</span>
+                            <span class="bg-blue-100 text-primary px-3 py-1 rounded-full text-sm">JavaScript</span>
+                            <span class="bg-blue-100 text-primary px-3 py-1 rounded-full text-sm">Stripe</span>
+                        </div>
+                        <a href="#" class="inline-flex items-center text-primary font-semibold hover:text-secondary transition">
+                            Live Preview <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition group">
+                    <div class="h-48 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
+                        <i class="fas fa-utensils text-white text-6xl group-hover:scale-110 transition"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">Restaurant Website</h3>
+                        <p class="text-gray-600 mb-4">Modern restaurant website with online ordering system, menu management, and table reservations.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">HTML5</span>
+                            <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">Tailwind</span>
+                            <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">PHP</span>
+                        </div>
+                        <a href="#" class="inline-flex items-center text-primary font-semibold hover:text-secondary transition">
+                            Live Preview <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition group">
+                    <div class="h-48 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
+                        <i class="fas fa-graduation-cap text-white text-6xl group-hover:scale-110 transition"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">E-learning Platform</h3>
+                        <p class="text-gray-600 mb-4">Interactive learning management system with video courses, quizzes, and student progress tracking.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">React</span>
+                            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">Node.js</span>
+                            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">MongoDB</span>
+                        </div>
+                        <a href="#" class="inline-flex items-center text-primary font-semibold hover:text-secondary transition">
+                            Live Preview <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition group">
+                    <div class="h-48 bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center">
+                        <i class="fas fa-home text-white text-6xl group-hover:scale-110 transition"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">Real Estate Portal</h3>
+                        <p class="text-gray-600 mb-4">Property listing website with advanced search filters, image galleries, and agent contact forms.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm">HTML/CSS</span>
+                            <span class="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                            <span class="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm">MySQL</span>
+                        </div>
+                        <a href="#" class="inline-flex items-center text-primary font-semibold hover:text-secondary transition">
+                            Live Preview <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition group">
+                    <div class="h-48 bg-gradient-to-br from-red-400 to-red-600 flex items-center justify-center">
+                        <i class="fas fa-heartbeat text-white text-6xl group-hover:scale-110 transition"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">Healthcare Dashboard</h3>
+                        <p class="text-gray-600 mb-4">Medical administration panel with patient management, appointment scheduling, and reports.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm">Tailwind</span>
+                            <span class="bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm">Vue.js</span>
+                            <span class="bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm">Firebase</span>
+                        </div>
+                        <a href="#" class="inline-flex items-center text-primary font-semibold hover:text-secondary transition">
+                            Live Preview <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition group">
+                    <div class="h-48 bg-gradient-to-br from-teal-400 to-teal-600 flex items-center justify-center">
+                        <i class="fas fa-blog text-white text-6xl group-hover:scale-110 transition"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">Personal Blog Platform</h3>
+                        <p class="text-gray-600 mb-4">Clean blog website with markdown support, categories, comments system, and admin panel.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-teal-100 text-teal-700 px-3 py-1 rounded-full text-sm">HTML5</span>
+                            <span class="bg-teal-100 text-teal-700 px-3 py-1 rounded-full text-sm">CSS3</span>
+                            <span class="bg-teal-100 text-teal-700 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                        </div>
+                        <a href="#" class="inline-flex items-center text-primary font-semibold hover:text-secondary transition">
+                            Live Preview <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-5xl font-bold text-primary mb-2">50+</div>
+                    <p class="text-gray-600">Projects Completed</p>
+                </div>
+                <div>
+                    <div class="text-5xl font-bold text-primary mb-2">35+</div>
+                    <p class="text-gray-600">Happy Clients</p>
+                </div>
+                <div>
+                    <div class="text-5xl font-bold text-primary mb-2">5+</div>
+                    <p class="text-gray-600">Years Experience</p>
+                </div>
+                <div>
+                    <div class="text-5xl font-bold text-primary mb-2">100%</div>
+                    <p class="text-gray-600">Client Satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-br from-blue-900 to-blue-700">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Have a Project in Mind?</h2>
+            <p class="text-xl text-blue-100 mb-8">Let's work together to bring your vision to life. I'm always excited to take on new challenges.</p>
+            <a href="mailto:samijee24@gmail.com?subject=Project Inquiry" class="inline-block bg-white text-primary px-10 py-4 rounded-full font-semibold hover:bg-gray-100 transition text-lg">Start a Project</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">SAMI</h3>
+                    <p class="text-gray-400">Professional Web Developer & E-commerce Specialist dedicated to delivering exceptional digital experiences.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-primary transition">Portfolio</a></li>
+                        <li><a href="ecommerce.html" class="text-gray-400 hover:text-primary transition">E-commerce Solutions</a></li>
+                        <li><a href="projects.html" class="text-gray-400 hover:text-primary transition">Projects</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-primary transition">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect With Me</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-primary transition text-2xl"><i class="fab fa-github"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition text-2xl"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition text-2xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition text-2xl"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <p class="text-gray-400 mt-4"><i class="fas fa-envelope mr-2"></i>samijee24@gmail.com</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 SAMI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
